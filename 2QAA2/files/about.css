@@ -1,0 +1,243 @@
+/* history banner */
+
+div.history-banner {
+    background-image: url('images/about/history-banner.png');
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    padding-top: 230px !important;
+}
+
+.history-banner .title {
+    color: white;
+    font-family: 'Bitter', serif !important;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.history-banner .subtitle {
+    color: white;
+    font-family: 'Bitter', serif !important;
+    font-weight: bold;
+    margin-top: 140px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+/* founders */
+
+.founder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.founder .portrait {
+    width: 100%;
+}
+
+.founder .name {
+    color: white;
+    font-family: 'Bitter', serif !important;
+}
+
+.founder .position {
+    color: white;
+    font-family: 'K2D', sans-serif !important;
+}
+
+.founder .divider {
+    width: 30px;
+}
+
+.founder ul {
+    color: white;
+    font-family: 'K2D', sans-serif !important;
+    line-height: 2em;
+}
+
+/* history */
+
+.history .title {
+    color: white;
+    font-family: 'Bitter', serif !important;
+    font-weight: bold;
+    font-size: 2.1rem;
+}
+
+.history .text {
+    color: white;
+    font-family: 'K2D', sans-serif !important;
+}
+
+/* administrators */
+
+.admin {
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.admin .banner {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    opacity: 70%;
+}
+
+.admin .banner-text {
+    position: absolute;
+}
+
+.admin .banner-title {
+    color: white;
+    font-family: 'Bitter', serif !important;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.admin .banner-description {
+    color: white;
+    font-family: 'K2D', sans-serif !important;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+/* teachers */
+
+.teachers {
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.teachers .banner {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    opacity: 70%;
+}
+
+.teachers .banner-text {
+    position: absolute;
+}
+
+.teachers .banner-title {
+    color: white;
+    font-family: 'Bitter', serif !important;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.teachers .banner-description {
+    color: white;
+    font-family: 'K2D', sans-serif !important;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+/* admin */
+
+.admin-profiles li {
+    background: none;
+}
+
+.admin-profiles img {
+    height: 150px;
+    width: auto;
+}
+
+.admin-name {
+    color: white;
+    font-family: 'Bitter', serif !important;
+}
+
+.admin-founder,
+.admin-description {
+    color: white;
+    font-family: 'K2D', sans-serif !important;
+}
+
+.song-heading {
+    color: white;
+    font-family: 'Bitter', serif !important;
+    font-weight: bold;
+    text-align: center;
+}
+
+.song-lyrics {
+    width: 100%;
+}
+
+.song-title {
+    color: white;
+    font-family: 'Bitter', serif !important;
+    text-align: center;
+}
+
+.song-author {
+    color: white;
+    font-family: 'K2D', sans-serif !important;
+    text-align: center;
+}
+
+.song {
+    color: white;
+    font-family: 'K2D', sans-serif !important;
+}
+
+/* teachers */
+
+.teacher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.heading {
+    color: white;
+    font-family: 'Bitter', serif !important;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.card {
+    background: none;
+    border: 1px solid #F6E8C0;
+}
+  
+.teacher-card h2 {
+    color: white;
+    font-family: 'Bitter', serif !important;
+}
+  
+.teacher-card .img img {
+    width: 50%;
+    object-fit: cover;
+}
+  
+.teacher-card p {
+    color: white;
+    font-family: 'K2D', sans-serif !important;
+    text-align: justify;
+}
+
+/* media queries */
+
+@media screen and (max-width: 992px) {
+    .song-lyrics {
+        width: 60%;
+        margin-right: 2em;
+    }
+  }
+  
+@media screen and (max-width: 576px) {
+    .song-lyrics {
+        width: 100%;
+    }
+}

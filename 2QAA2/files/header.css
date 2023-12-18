@@ -1,0 +1,81 @@
+/* general styles */
+
+html {
+  scroll-padding: 90px;
+}
+
+body {
+  background-color: #0D0D0D;
+}
+
+section {
+  overflow-x: hidden;
+}
+
+.hr {
+  border-color: white;
+  width: 100%;
+}
+
+/* navbar */
+
+.navbar {
+  background-color: #0D0D0D !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.hogwarts-logo,
+.hogwarts-text {
+  height: 60px;
+}
+
+.hogwarts-logo {
+  margin-right: 5px;
+}
+
+nav ul {
+  font-family: 'Bitter', serif !important;
+}
+
+nav li {
+  margin-right: 12px;
+}
+
+.navbar-text {
+  color: #F6E8C0 !important;
+}
+
+.navbar-text.active {
+  font-weight: bold;
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: #F6E8C0;
+  text-decoration: none;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #F6E8C0;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+  transform: scaleX(0);
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar-toggler:active {
+  border: none !important;
+}
+
+.toggler {
+  width: 25px;
+}

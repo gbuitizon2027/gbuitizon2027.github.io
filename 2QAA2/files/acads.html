@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academics | Hogwarts School of Witchcraft & Wizardry</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="acads.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=K2D:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="images/logo-cropped.png">
+</head>
+<body>
+  <nav class="fixed-top navbar navbar-expand-lg" aria-label="Third navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img class="hogwarts-logo rounded-pill" src="images/logo.png" alt="Hogwarts logo">
+        <img class="hogwarts-text" src="images/hogwarts.png" alt="hogwarts name">
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+        <img class="toggler" src="images/hambuger.png" alt="toggler">
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbarsExample03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="hover-underline-animation navbar-text nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="hover-underline-animation navbar-text nav-link" aria-current="page" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="hover-underline-animation navbar-text nav-link active" aria-current="page" href="acads.html">Academics</a>
+          </li>
+          <li class="nav-item">
+            <a class="hover-underline-animation navbar-text nav-link" aria-current="page" href="extra.html">Extra-Curricular</a>
+          </li>
+          <li class="nav-item">
+            <a class="hover-underline-animation navbar-text nav-link" aria-current="page" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="title-section">
+    <div class="title-text text-center">
+      <h2 class="title">Academics</h2>
+    </div>
+    <div class="links container d-flex justify-content-evenly">
+      <a class="title-links d-none d-sm-inline" href="#courses">Courses</a>
+      <a class="title-links d-none d-sm-inline" href="#grading">Grading System</a>
+      <a class="title-links d-none d-sm-inline" href="#exams">Examinations</a>
+      <a class="title-links" href="biology.html">Biology Laboratory</a>
+      <a class="title-links" href="english.html">English Sonnets</a>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="row" id="courses">
+      <div class="col-md-8">
+        <h1 class="content-title my-lg-5 my-4">Core Courses</h1>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Astronomy
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h4>Professor Aurora Sinistra</h4>
+                <div class="subject d-flex">
+                  <p class="p-0">Pique your curiosities about the cosmos and begin to explain everything that we observe in the universe. Map out constellations, observe faraway galaxies using telescopes, learn more about different celestial bodies. All that and more in our astronomy course.</p>
+                  <img draggable="false" class="subject-img d-none d-lg-block" src="images/acads/astronomy.webp" alt="astronomy">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Charms
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h4>Professor Filius Flitwick</h4>
+                <div class="subject d-flex">
+                  <p class="p-0">Fancy yourself to a prancing cupcake? You're in luck. Here you will learn the appropriate hand gestures and proper pronunciation to cast charms such as Levitation and Fire-Making.  Ready your wand, books, parchment and quill as things are going to get interesting.</p>
+                  <img draggable="false" class="subject-img d-none d-lg-block" src="images/acads/charms.webp" alt="charms">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Defense Against the Dark Arts
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h4>Professor Remus Lupin</h4>
+                <div class="subject d-flex">
+                  <p class="p-0">Dark creatures? Hexes? Fear them no more as you learn to combat these using various offensive and defensive spells. From the small yet terrible Cornish Pixies to the fearsome trolls, counter them with spells such as Petrificus Totalus and Peskipiksi Pesternomi.</p>
+                  <img draggable="false" class="subject-img d-none d-lg-block" src="images/acads/dada.webp" alt="dada">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Flying
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h4>Professor Rolanda Hooch</h4>
+                <div class="subject d-flex">
+                  <p class="p-0">Soar bravely through the skies! Take your Broom Flight Class and learn the basics. Summoning, mounting, lift-off, standing, and much more. Try and test your luck in applying for the Quidditch teams, see you soon.</p>
+                  <img draggable="false" class="subject-img d-none d-lg-block" src="images/acads/flying.webp" alt="flying">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Herbology
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h4>Professor Pomona Sprout</h4>
+                <div class="subject d-flex">
+                  <p class="p-0">Study the magical and mundane, sometimes dangerous, plants and fungi. Learn about their anatomy, magical properties, utilization and proper care and handling. Visit the seven greenhouses on campus if you get the chance, but be mindful of unearthed mandrakes and devil's snare.
+                  </p>
+                  <img draggable="false" class="subject-img d-none d-lg-block" src="images/acads/herbology.webp" alt="herbology">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Potions
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h4>Professor Severus Snape</h4>
+                <div class="subject d-flex">
+                  <p class="p-0">
+                    Learn how to bottle fame, brew glory, and even put a stopper to death. You will be provided with a potions kit containing ingredients like belladonnas and equipment such as books, glass phials, a weighing scale, and a standard cauldron to be used in every class. Make sure to pay close attention to the intricacies of timing, ageing, stirring techniques, and bottling.
+                  </p>
+                  <img draggable="false" class="subject-img d-none d-lg-block" src="images/acads/potions.webp" alt="potions">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                Transfiguration
+              </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h4>Professor Minerva McGonagall</h4>
+                <div class="subject d-flex">
+                  <p class="p-0">
+                    The art of changing the form and appearance of an object or a person. Though often said to be complex and dangerous is not always the case if studied properly. Learn the basic transfiguration alphabet and formulas which are directly influenced by the subject's bodyweight, viciousness, wand power, and concentration. A happy transfiguration to all.
+                  </p>
+                  <img draggable="false" class="subject-img d-none d-lg-block" src="images/acads/transfiguration.webp" alt="transfiguration">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 electives">
+        <h1 class="content-title my-lg-5 my-4">Electives</h1>
+        <img draggable="false" class="mb-4 img-fluid" src="images/acads/apparition.webp" alt="apparition">
+        <h4 class="elective-year">Third year onwards:</h4>
+        <ul>
+          <li>Arithmancy</li>
+          <li>Care of Magical Creatures</li>
+          <li>Divination</li>
+          <li>Muggle Studies</li>
+          <li>Study of Ancient Runes</li>
+        </ul>
+
+        <h4 class="elective-year">Sixth and seventh years:</h4>
+        <ul>
+          <li>Advanced Arithmancy Studies</li>
+          <li>Alchemy</li>
+          <li>Ancient Studies</li>
+          <li>Apparition</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="hr mt-lg-5 mt-4 mx-auto">
+
+    <div class="grading row" id="grading">
+      <h1 class="content-title my-lg-5 my-4">Grading System</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="grade-category">Passing Grades &#x2713;</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex text-start">
+              <p class="letter-grade mb-0">O</p>
+              <div>
+                <h5 class="label">
+                  Outstanding
+                  <small class="description d-block">
+                    Always continues to N.E.W.T.
+                  </small>
+                </h5>
+              </div>
+            </li>
+  
+            <li class="list-group-item d-flex text-start">
+              <p class="letter-grade mb-0">E</p>
+              <div>
+                <h5 class="label">
+                  Exceeds Expectations
+                  <small class="description d-block">
+                    Usually continues to N.E.W.T.
+                  </small>
+                </h5>
+              </div>
+            </li>
+
+            <li class="list-group-item d-flex text-start">
+              <p class="letter-grade mb-0">A</p>
+              <div>
+                <h5 class="label">
+                  Acceptable
+                  <small class="description d-block">
+                    Rarely continues to N.E.W.T.
+                  </small>
+                </h5>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h2 class="grade-category">Failing Grades &#x2613;</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex text-start">
+              <p class="letter-grade mb-0">P</p>
+              <div>
+                <h5 class="label">
+                  Poor
+                  <small class="description d-block">
+                    May repeat subject
+                  </small>
+                </h5>
+              </div>
+            </li>
+  
+            <li class="list-group-item d-flex text-start">
+              <p class="letter-grade mb-0">D</p>
+              <div>
+                <h5 class="label">
+                  Dreadful
+                  <small class="description d-block">
+                    May not receive O.W.L. credit
+                  </small>
+                </h5>
+              </div>
+            </li>
+
+            <li class="list-group-item d-flex text-start">
+              <p class="letter-grade mb-0">T</p>
+              <div class="grade">
+                <h5 class="label">
+                  Troll
+                  <small class="description d-block">
+                    Fail with distinction. More than one T may mean refusal into other N.E.W.T.s
+                  </small>
+                </h5>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr class="hr mt-lg-5 mt-4 mx-auto">
+
+    <div class="exams row" id="exams">
+      <h1 class="content-title my-lg-5 my-4">End of Year Examinations</h1>
+      <div class="row">
+        <div class="col-lg-4">
+          <h2 class="exam-title">Exams</h2>
+          <h4 class="exam-years">For 1st-4th and 6th years</h4>
+          <p class="exam-description">All students at the first, second, third, fourth, and sixth year levels are required to complete a set of examinations to get into the next year of schooling.</p>
+          <p class="exam-description">There is one exam for each subject.</p>
+          <p class="m-0 exam-description">These exams are Hogwarts-regulated, but can range from purely written tests to practical ones.</p>
+          <img draggable="false" class="my-3 img-fluid" src="images/acads/exams.webp" alt="exams">
+          <p class="exam-description">The image above is an example of a Defense Against the Dark Arts Exam, consisting of an obstacle course with dark creatures and other challenges.</p>
+        </div>
+
+        <div class="col-lg-4">
+          <h2 class="exam-title">O.W.L.s</h2>
+          <h4 class="exam-years">For 5th years</h4>
+          <img draggable="false" class="my-3 img-fluid" src="images/acads/owls.webp" alt="owls">
+          <p class="exam-description">Ordinary Wizarding Levels, alternatively known as O.W.L.s, are a set of standardized, subject-specific tests for fifth year students, administered by the Wizarding Examinations Authority.</p>
+          <p class="m exam-description">The O.W.L.s are some of the most important exams a student can take, as they determine what course or specialty a student could continue to study in their final years at Hogwarts.</p>
+          <p class="exam-description">O.W.L.s are in the form of both written and practical examinations, taken over a two-week period.</p>
+        </div>
+
+        <div class="col-lg-4">
+          <h2 class="exam-title">N.E.W.T.s</h2>
+          <h4 class="exam-years">For 7th years</h4>
+          <p class="exam-description">The N.E.W.T.s are the entrance exams in order to get into optional levels of education for exceptional students.</p>
+          <p class="exam-description">Courses that are in the N.E.W.T.-level have increasingly difficult subject matter.</p>
+          <p class="m-0 exam-description">In order to progress to N.E.W.T., a student had to score either an 'Outstanding' or an 'Exceeds Expectations' on their O.W.L.</p>
+          <img draggable="false" class="my-3 img-fluid" src="images/acads/newts.webp" alt="newts">
+          <p class="exam-description">Illustrated above is a N.E.W.T. Potions class; only twelve students were able to advance from the previous year.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

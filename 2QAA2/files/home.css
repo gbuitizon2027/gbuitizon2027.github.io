@@ -1,0 +1,184 @@
+/* carousel */
+
+.carousel-image {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  object-position: center;
+  opacity: 80%;
+}
+
+.carousel-image.castle {
+  object-position: top;
+}
+
+.carousel-image.lake {
+  object-position: 0 80%;
+}
+
+.carousel .place {
+  font-family: 'Bitter', serif !important;
+  font-weight: bold;
+}
+
+.carousel p {
+  font-family: 'K2D', sans-serif;
+}
+
+/* video */
+
+.welcome {
+  text-align: center;
+  font-style: normal;
+}
+
+video {
+  width: 100%;
+}
+
+/* events */
+
+.events img {
+  width: 100%;
+}
+
+.event-date {
+  color: white;
+  font-family: 'Bitter', serif !important;
+  font-weight: bold;
+  width: 50px;
+  margin-right: 20px !important;
+}
+
+.event-title {
+  color: white;
+  font-family: 'Bitter', serif !important;
+}
+
+.event-description {
+  color: white;
+  font-family: 'K2D', sans-serif !important;
+}
+
+/* articles */
+
+h1 {
+  color: white;
+  font-family: 'Bitter', serif !important;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.article {
+  background-color: #0D0D0D;
+  border-color: rgb(73, 80, 87);
+  overflow: hidden;
+  transition: all 0.15s;
+}
+
+.article:hover {
+  transform: scale(1.02);
+}
+
+.red-category {
+  color: #b63737 !important;
+  margin: 25px 0 0 25px;
+  font-family: 'K2D', sans-serif;
+}
+
+.green-category {
+  color: #00861E !important;
+  margin: 25px 0 0 25px;
+  font-family: 'K2D', sans-serif;
+}
+
+.yellow-category {
+  color: #D89E48 !important;
+  margin: 25px 0 0 25px;
+  font-family: 'K2D', sans-serif;
+}
+
+.blue-category {
+  color: #3d49cf !important;
+  margin: 25px 0 0 25px;
+  font-family: 'K2D', sans-serif;
+}
+
+.featured h3 {
+  color: white;
+  font-family: 'Bitter', serif !important;
+  margin: 10px 16px 5px 25px;
+  font-weight: bold;
+}
+
+.card-body.wrap {
+  padding: 0 !important;
+}
+
+.card-body.article-text {
+  color: white;
+  font-family: 'K2D', sans-serif;
+  padding: 0 16px 16px 0;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+.article-image {
+  height: 100%;
+  object-fit: cover;
+}
+
+.article-image.quidditch {
+  object-position: 75% 0;
+}
+
+.article-image.ministry {
+  object-position: 20% 0;
+}
+
+.article-image.darkarts {
+  object-position: 40% 0;
+}
+
+/* page cards */
+
+.page-card {
+  height: 350px;
+  overflow: hidden !important;
+  background-color: black;
+  transition: all 0.15s;
+}
+
+.page-card:hover {
+  transform: translateY(-10px);
+}
+
+.page-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 40%;
+}
+
+.card-img-overlay {
+  padding: 50px;
+}
+
+.page-card .card-title {
+  font-family: 'Bitter', serif !important;
+  font-weight: bold;
+}
+
+.page-card p {
+  font-family: 'K2D', sans-serif;
+}
+
+.page-card a {
+  color: white;
+  text-decoration: none;
+  font-family: 'K2D', sans-serif;
+}
+
+.page-card a:hover {
+  text-decoration: underline;
+}

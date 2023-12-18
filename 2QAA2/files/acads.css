@@ -1,0 +1,175 @@
+/* title */
+
+.title-section {
+  background-image: url('images/acads/acads-background.png');
+  width: 100%;
+  height: 100dvh;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+
+.title-text {
+  display: grid;
+  place-items: center;
+}
+
+.title {
+  color: #F6E8C0;
+  font-family: 'Bitter', serif !important;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  font-size: 3rem;
+}
+
+.links {
+  position: absolute;
+  bottom: 50px;
+}
+
+.title-links {
+  color: #F6E8C0;
+  font-family: 'K2D', sans-serif !important;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  transition: all 0.15s;
+}
+
+.title-links:hover {
+  text-shadow: 0 0 7px #f7ecd0;
+}
+
+/* courses */
+
+.content-title {
+  color: white;
+  font-family: 'Bitter', serif !important;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.accordion {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        }
+
+.accordion-item,
+.accordion-button,
+.accordion-button:not(.collapsed),
+.accordion-header {
+  color: white;
+  background-color: #0D0D0D !important;
+}
+
+.accordion-header {
+  font-family: 'Bitter', serif !important;
+}
+
+.accordion-body {
+  font-family: 'K2D', sans-serif !important;
+}
+
+.accordion-body .subject {
+  gap: 0.5em;
+}
+
+.subject-img {
+  width: 250px;
+  object-fit: cover;
+}
+
+/* electives */
+
+.elective-year {
+  color: white;
+  font-family: 'Bitter', serif !important;
+}
+
+.electives li {
+  color: white;
+  font-family: 'K2D', sans-serif !important;
+}
+
+.electives img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* grading */
+
+.grade-category {
+  color: white;
+  font-family: 'Bitter', serif !important;
+}
+
+.list-group-item {
+  background: none;
+}
+
+.label,
+.description {
+  text-align: left !important;
+}
+
+.contact-collapse,
+.contact-collapse:hover {
+  font-size: 1.5rem;
+  color: white;
+  font-family: 'Bitter', serif;
+}
+
+.label {
+  color: white;
+  font-family: 'Bitter', serif;
+}
+
+.description {
+  color: white !important;
+  font-family: 'K2D', sans-serif;
+}
+
+.letter-grade {
+  color: white;
+  font-family: 'Bitter', serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  width: 50px;
+}
+
+.grade {
+  width: 100%;
+  margin-left: 8px;
+}
+
+/* exams */
+
+.exam-title {
+  text-align: center;
+  color: white;
+  font-family: 'Bitter', serif !important;
+}
+
+.exam-years {
+  text-align: center;
+  color: white;
+  font-family: 'K2D', sans-serif !important;
+}
+
+.exam-time {
+  text-align: center;
+  color: white;
+  font-family: 'K2D', sans-serif !important;
+  font-weight: bold;
+}
+
+.exam-description {
+  color: white;
+  font-family: 'K2D', sans-serif !important;
+}
+
+/* media queries */
+
+@media screen and (max-width: 992px) {
+  .electives img {
+    height: 150px;
+  }
+}

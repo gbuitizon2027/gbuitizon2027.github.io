@@ -1,0 +1,89 @@
+/* background */
+
+.background {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    height: 120%;
+}
+
+/* main */
+
+main {
+    margin-top: 100px;
+}
+
+.opacity {
+    border-radius: 10px !important;
+    background: rgba(0, 0, 0, 0.7);
+    display: block;
+}
+
+h1 {
+    color: white;
+    font-family: 'Bitter', serif !important;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.hr {
+    border-color: white;
+    width: 100%;
+}
+
+.contact-icon {
+    height: 60px;
+}
+
+/* lists */
+
+.list-group-item {
+    background: none;
+}
+
+.label,
+.description {
+    text-align: left !important;
+}
+
+.contact-collapse,
+.contact-collapse:hover {
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Bitter', serif;
+}
+
+.label {
+    color: white;
+    font-family: 'Bitter', serif;
+}
+
+.description {
+    color: white !important;
+    font-family: 'K2D', sans-serif;
+}
+
+/* map */
+
+.map {
+    overflow: hidden;
+}
+
+.map h2 {
+    color: white;
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.map .left {
+    flex: 3;
+}
+
+.map-img {
+    width: 100%;
+}
+
+.map .right {
+    flex: 1;
+}
