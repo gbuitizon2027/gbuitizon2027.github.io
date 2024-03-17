@@ -188,8 +188,8 @@ function checkOrder(){
   console.log('New current order:', currentOrder);
 
   animateCustomerOut();
+  changePics();
   setTimeout(() => {
-    changePics();
     characterDiv.classList.remove('customerOut');
     orderElement.classList.remove('orderPopOut');
     orderElement.classList.remove('d-none');
