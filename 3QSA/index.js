@@ -189,9 +189,9 @@ function checkOrder(){
 
   animateCustomerOut();
   setTimeout(() => {
+    changePics();
     characterDiv.classList.remove('customerOut');
     orderElement.classList.remove('orderPopOut');
-    changePics();
     orderElement.classList.remove('d-none');
   }, 1000);
 
