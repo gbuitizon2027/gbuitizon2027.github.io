@@ -191,8 +191,8 @@ function checkOrder(){
   setTimeout(() => {
     characterDiv.classList.remove('customerOut');
     orderElement.classList.remove('orderPopOut');
-    orderElement.classList.remove('d-none');
     changePics();
+    orderElement.classList.remove('d-none');
   }, 1000);
 
   // change the pics
