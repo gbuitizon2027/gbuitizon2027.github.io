@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purin Caf&eacute;</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <script src="index.js" defer></script>
+
+  <link rel="shortcut icon" href="images/favicon.png?" type="image/x-icon">
+</head>
+<body>
+  <div class="game">
+    <div id="gameArea">
+      <img class="cover" id="title" src="images/title.png" alt="titlescreen">
+      <img class="cover d-none" id="end" src="images/end-top.png" alt="game over">
+      <img class="table m-0" src="images/table.png" alt="the table">
+      <button disabled id="check" class="d-none" onclick="checkOrder()">Give Order!</button>
+      <img id="finalOrder" class="d-none" src="images/orders/anyavocado.png" alt="order u made">
+      <div class="mt-4 score">
+        <p class="ms-3" id="scoreDisplay">SCORE: 0</p>
+      </div>
+
+      <!-- i want the character to show up here -->
+      <div id="characterDiv" class="text-center characterDiv">
+        <img class="" id="character" src="images/characters/cinnamoroll.png" alt="character">
+        <div id="order" class="d-none d-grid">
+          <img id="orderImg" class="orderImg" src="images/ingredients/Bowl.png" alt="order">
+        </div>
+      </div>
+    </div>
+    <div id="controlArea">
+      <div id="titleControls">
+        <div class="titleButtons">
+          <button onclick="startGame()">Start Game!</button>
+          <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Mechanics
+          </button>
+          <a href="devs.html">About The Devs</a>
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Game Mechanics</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Welcome to our caf&eacute;!<br><br>
+
+                  Pompompurin's friends from far and wide have come to visit this cozy establishment! Choose from a selection of ingredients to fulfill every customer's order. Each order can either come in a cup, plate, or bowl. There are also three choices for the flavors, namely, avocado, strawberry, and chocolate.<br><br>
+
+                  Remember to mix the food up before serving it to your customer! After that step, you can't change the ingredients anymore, so make sure to choose the right items.<br><br>
+
+                  Sometimes, a customer might be fine with any flavor, any container, or even both!<br><br>
+
+                  If you give a customer the wrong order, then too bad; it's game over for the day.<br><br>
+
+                  The scoring is as follows:<br>
+                  Any container & any flavor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10pts<br>
+                  Any container or any flavor&nbsp;&nbsp;&nbsp;15pts<br>
+                  Specific container & flavor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20pts<br><br>
+
+                  P.S. Check the console log if you want to cheat &gt;:D
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="" data-bs-dismiss="modal">OK!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-none d-flex flex-column justify-content-center align-items-center" id="gameOver">
+        <p>Score: <span id="lastScore"></span></p>
+        <p>High Score: <span id="highestScore"></span></p>
+        <p class="disclaimer">Note: The high score is only for this session.</p>
+        <div class="endButtons">
+          <button onclick="startGame()">Play Again!</button>
+          <button onclick="titleScreen()">Back to Title</button>
+        </div>
+      </div>
+
+      <div class="purinArea">
+        <div class="types">
+          <img onclick="selectIngredient('type', 'drink')" src="images/ingredients/Cup.PNG" alt="drink">
+          <img class="plate d-none" id="plate" onclick="selectIngredient('type', 'plate')" src="images/ingredients/Plate.PNG" alt="plate">
+          <img class="bowl d-none" id="bowl" onclick="selectIngredient('type', 'bowl')" src="images/ingredients/Bowl.png" alt="bowl">
+        </div>
+        <div class="purin text-center">
+          <button disabled id="process" class="d-none" onclick="processIngredients()">Process Ingredients</button>
+          <img id="chef" class="chef" src="images/favicon.png" alt="chef purin">
+          <img id="tape" class="d-none tape" src="images/tape.png" alt="tape">
+          <div id="orderDisplay" class="orderDisplay p-2 d-none">
+            Current Ingredients<br>
+            <div class="my-2" id="currentType">&nbsp;</div>
+            <div id="currentFlavor">&nbsp;</div>
+          </div>
+        </div>
+        <div class="flavors">
+          <img class="avocado d-none" id="avocado" onclick="selectIngredient('flavor', 'avocado')" src="images/ingredients/avocado.PNG" alt="avocado">
+          <img class="strawb d-none" id="strawberry" onclick="selectIngredient('flavor', 'strawberry')" src="images/ingredients/strawberry.PNG" alt="strawberry">
+          <img class="choco d-none" id="chocolate" onclick="selectIngredient('flavor', 'chocolate')" src="images/ingredients/chocolate.PNG" alt="chocolate">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
