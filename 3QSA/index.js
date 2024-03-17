@@ -212,7 +212,7 @@ function correctOrder(){
 };
 
 function wrongOrder(){
-  alert(`Uh oh, ${customerOrder.customer} didn't order this... They wanted a ${customerOrder.type} of ${customerOrder.flavor}!`);
+  alert(`Uh oh, ${customerOrder.customer} didn't order this... They wanted some ${customerOrder.flavor} in a ${customerOrder.type}!`);
 
   document.getElementById('end').classList.remove('d-none');
   document.getElementById('gameOver').classList.remove('d-none');
