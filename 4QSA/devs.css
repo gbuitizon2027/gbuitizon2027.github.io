@@ -126,15 +126,31 @@ body {
   font-family: "Maison";
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   body {
-    height: 120dvh;
+    height: 150dvh;
+  }
+
+  h1 {
+    font-size: 5.5rem !important;
+  }
+
+  .about-section p {
+    font-size: 2.5rem;
   }
 }
 
 @media screen and (max-width: 576px) {
   body {
-    height: 215dvh;
+    height: 266dvh;
+  }
+
+  h1 {
+    font-size: 4rem !important;
+  }
+
+  .about-section p {
+    font-size: 2rem;
   }
 }
 
