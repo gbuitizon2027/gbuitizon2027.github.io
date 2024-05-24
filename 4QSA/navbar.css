@@ -1,0 +1,70 @@
+body {
+  background-color: #F4BE69;
+}
+
+.navbar {
+  background-color: #D99748;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-burger {
+  width: 30px;
+  height: 30px;
+}
+
+.navbar-brand {
+  font-family: "Maison";
+  color: #8C5627;
+  font-size: 1.9rem;
+  transition: 0.15s all;
+  font-weight: bold;
+}
+
+.navbar-brand:hover {
+  color: #4e2f14;
+}
+
+.navbar-cart {
+  width: 35px;
+  height: 35px;
+}
+
+.offcanvas {
+  background-color: #591303;
+}
+
+.offcanvas-title,
+.nav-link,
+.nav-link:hover {
+  color: #F4BE69;
+}
+
+.nav-close-button {
+  background: none;
+  border: none;
+}
+
+.nav-close {
+  width: 25px;
+  height: 25px;
+}
+
+.nav-item {
+  transition: 0.15s all;
+}
+
+.nav-item:hover {
+  background-color: #8C2B07;
+}
+
+.nav-icon {
+  width: 30px;
+  height: 30px;
+}
+
+main {
+  margin-top: 90px;
+}
