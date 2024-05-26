@@ -72,7 +72,7 @@ body {
   background: linear-gradient(0deg, rgba(151,104,126,1) 0%, rgba(218,114,126,1) 100%);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100svh;
+  height: 100%;
 }
 
 .about-section {
