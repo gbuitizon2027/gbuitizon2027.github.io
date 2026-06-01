@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaciliCLC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="images/calendar.png?">
+</head>
+<body>
+    <div class="container-fluid head">
+        <main class="text-center">
+            <h1 class="ps-4">FaciliCLC</h1>
+            <p class="ps-4">To make reserving facilities a little less frustrating.</p>
+        </main>
+    </div>
+
+    <div class="container py-5">
+        <div class="row gx-5">
+            <div class="col-7">
+                <h1>What is this?</h1>
+                Welcome to the initial prototype of FaciliCLC ! This website serves to display the reserved times of different facilities in CLC to help scholars pick the right times to reserve for their events and activites. What I've created right now is just the bare minimum (hihi sorry), but I would love for this website to handle multiple bookings during one timeslot (the table started to look ugly) and to be able to display more than just the current week, among other improvements. Thank you for taking the time to view my output!
+            </div>
+            <div class="col-5">
+                <h1>How do I use it?</h1>
+                Ideally, only teachers, administrators, or trusted Sangguniang Mag-aaral Staff can add or edit bookings. However, for this version, I will let you try adding your own bookings! Simply click the blue button below to add a new booking, and input the necessary information.
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1>This Week's Schedule</h1>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                + New Booking
+            </button>
+        </div>
+
+        <div class="table-responsive mt-4">
+            <table class="table table-bordered text-center border-secondary">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th style="width: 10%;">Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody id="calendarBody">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="bookingModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="bookingForm">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Reserve a Facility</h5>
+                    </div>
+                    <div class="modal-body">
+                        <select class="form-select mb-3" id="facility" required>
+                            <option value="Gymnasium">Gymnasium</option>
+                            <option value="Library Conference Room">Library Conference Room</option>
+                            <option value="GRH Mess Hall">GRH Mess Hall</option>
+                        </select>
+                        
+                        <input type="date" class="form-control mb-3" id="date" required>
+                        <label class="form-label">Select Period</label>
+                        <select class="form-select mb-3" id="time" required>
+                            <option value="07:40">07:40 AM - 08:30 AM</option>
+                            <option value="08:30">08:30 AM - 09:20 AM</option>
+                            <option value="09:20">09:20 AM - 09:40 AM</option>
+                            <option value="09:40">09:40 AM - 10:30 AM</option>
+                            <option value="10:30">10:30 AM - 11:20 AM</option>
+                            <option value="11:20">11:20 AM - 12:10 PM</option>
+                            <option value="12:10">12:10 PM - 01:00 PM</option>
+                            <option value="13:00">01:00 PM - 01:50 PM</option>
+                            <option value="13:50">01:50 PM - 02:40 PM</option>
+                            <option value="14:40">02:40 PM - 02:50 PM</option>
+                            <option value="14:50">02:50 PM - 03:40 PM</option>
+                            <option value="15:40">03:40 PM - 04:30 PM</option>
+                        </select>
+                        
+                        <input type="text" class="form-control mb-3" id="reason" placeholder="Event/Reason" required>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">Confirm</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+
+    <script>
+        const periods = [
+            "07:40", "08:30", "09:20", "09:40", "10:30", "11:20", "12:10", "13:00", "13:50", "14:40", "14:50", "15:40"
+        ];
+
+        const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+
+        function initializeCalendar() {
+            const tbody = document.getElementById('calendarBody');
+            tbody.innerHTML = ""; // Clear it first
+
+            periods.forEach(time => {
+                let row = `<tr><td class="time-cell"><div>${time}</div></td>`;
+                
+                for (let i = 0; i < 5; i++) {
+                    row += `<td id="${days[i]}-${time}"></td>`;
+                }
+                row += `</tr>`;
+                tbody.innerHTML += row;
+            });
+        }
+        initializeCalendar();
+
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const facility = document.getElementById('facility').value;
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const reason = document.getElementById('reason').value;
+
+            renderBooking(facility, date, time, reason);
+
+            this.reset();
+            bootstrap.Modal.getInstance(document.getElementById('bookingModal')).hide();
+        });
+
+        function renderBooking(facility, date, time, reason) {
+            const dayName = new Date(date).toLocaleDateString('en-US', { weekday: 'long' });
+            const cellId = `${dayName}-${time}`;
+            const targetCell = document.getElementById(cellId);
+
+            if (targetCell) {
+                targetCell.innerHTML = "";
+
+                const block = document.createElement('div');
+                block.className = 'booking-block';
+                
+                if (facility === "Gymnasium") block.style.backgroundColor = "#dc3545"; // Red
+                else if (facility === "Library Conference Room") block.style.backgroundColor = "#198754"; // Green
+                else if (facility === "GRH Mess Hall") block.style.backgroundColor = "#fd7e14"; // Orange
+                else block.style.backgroundColor = "#0d6efd"; // Default Blue
+
+                block.innerHTML = `
+                    <div class="fw-bold text-uppercase" style="font-size: 0.7rem;">${facility}</div>
+                    <div>${reason}</div>
+                `;
+
+                targetCell.appendChild(block);
+            }
+        }
+    </script>
+</body>
+</html>
